@@ -8,7 +8,7 @@ Sin código de ejemplo — solo la infraestructura de build y un `ping()` de ver
 ### Crear un nuevo proyecto
 
 ```bash
-npx create-aws-blocks mi-nuevo-proyecto
+npx @luisfdeleonramirez/create-aws-blocks-base mi-nuevo-proyecto
 cd mi-nuevo-proyecto
 npm install
 npm run dev
@@ -74,3 +74,8 @@ Full Building Block documentation: `node_modules/@aws-blocks/blocks/README.md`
 
 Backend en `aws-blocks/index.ts`. Frontend en `src/app.tsx`.
 Import del backend en frontend: `import { api } from 'aws-blocks'`.
+
+## Créditos
+
+Este proyecto se basa en [AWS Blocks](https://github.com/aws-devtools-labs/aws-blocks) de AWS DevTools Labs.
+Se generó una versión en blanco (sin bloques de ejemplo) para uso como plantilla base de pruebas y desarrollo.

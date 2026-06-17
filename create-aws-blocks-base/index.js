@@ -51,7 +51,7 @@ const projectName = process.argv[2];
 if (!projectName) {
   console.error('❌ Debes proporcionar un nombre para el proyecto.');
   console.error('');
-  console.error('  npx @lfdeleonramirez/create-aws-blocks-base mi-nuevo-proyecto');
+  console.error('  npx @luisfdeleonramirez/create-aws-blocks-base mi-nuevo-proyecto');
   console.error('');
   process.exit(1);
 }
