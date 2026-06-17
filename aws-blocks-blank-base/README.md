@@ -5,22 +5,18 @@ Sin código de ejemplo — solo la infraestructura de build y un `ping()` de ver
 
 ## Getting Started
 
-### Crear un nuevo proyecto desde esta plantilla
+### Crear un nuevo proyecto
 
 ```bash
-npx degit lfdeleonramirez/aws-blocks/aws-blocks-blank-base mi-nuevo-proyecto
+npx create-aws-blocks mi-nuevo-proyecto
 cd mi-nuevo-proyecto
 npm install
+npm run dev
 ```
 
-### Después de clonar
+Esto descarga la plantilla y configura automáticamente el nombre del proyecto en todos los archivos.
 
-1. Cambia `"name"` en `package.json` por el nombre de tu proyecto
-2. Cambia el Scope en `aws-blocks/index.ts`: `new Scope('nombre-de-tu-app')`
-3. `npm install`
-4. `npm run dev`
-
-Open http://localhost:3000 — debes ver "AWS Blocks Blank Base" con "✅ Backend conectado".
+Open http://localhost:3000 — debes ver el nombre de tu proyecto con "✅ Backend conectado".
 
 ## Project Structure
 

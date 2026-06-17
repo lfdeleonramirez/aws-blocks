@@ -1,0 +1,29 @@
+{
+  "name": "@luisfdeleonramirez/create-aws-blocks-base",
+  "version": "0.1.0",
+  "description": "Crea un nuevo proyecto AWS Blocks desde la plantilla base en blanco (sin bloques de ejemplo)",
+  "type": "module",
+  "bin": {
+    "create-aws-blocks-base": "./index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "aws",
+    "blocks",
+    "create",
+    "scaffold",
+    "template",
+    "base"
+  ],
+  "author": "lfdeleonramirez",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lfdeleonramirez/aws-blocks"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
