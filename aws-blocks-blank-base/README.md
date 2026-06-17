@@ -5,10 +5,34 @@ Sin código de ejemplo — solo la infraestructura de build y un `ping()` de ver
 
 ## Getting Started
 
+### Usar como template para un nuevo proyecto
+
+**Opción 1 — GitHub Template** (desde el navegador):
+1. Haz clic en "Use this template" en GitHub
+2. Dale nombre a tu nuevo repo
+3. Clona tu nuevo repo y corre `npm install`
+
+**Opción 2 — degit** (desde terminal, sin historial git):
 ```bash
+npx degit TU_USUARIO/aws-blocks/aws-blocks-blank-base mi-nuevo-proyecto
+cd mi-nuevo-proyecto
 npm install
-npm run dev          # Start local dev server
 ```
+
+**Opción 3 — Clone manual**:
+```bash
+git clone https://github.com/TU_USUARIO/aws-blocks.git mi-nuevo-proyecto
+cd mi-nuevo-proyecto
+rm -rf .git
+git init
+```
+
+### Después de clonar
+
+1. Cambia `"name"` en `package.json` por el nombre de tu proyecto
+2. Cambia el Scope en `aws-blocks/index.ts`: `new Scope('nombre-de-tu-app')`
+3. `npm install`
+4. `npm run dev`
 
 Open http://localhost:3000 — debes ver "AWS Blocks Blank Base" con "✅ Backend conectado".
 
