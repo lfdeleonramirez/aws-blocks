@@ -1,11 +1,13 @@
 import { api } from 'aws-blocks';
 import { useState, useEffect } from 'react';
 import { Container, Typography, Paper } from '@mui/material';
+import pkg from '../package.json';
 
 function App() {
   const [status, setStatus] = useState<any>(null);
 
   useEffect(() => {
+    document.title = pkg.name;
     api.ping().then(setStatus);
   }, []);
 
@@ -13,7 +15,7 @@ function App() {
     <Container maxWidth="md" sx={{ mt: 4 }}>
       <Paper sx={{ p: 3 }}>
         <Typography variant="h4" gutterBottom>
-          AWS Blocks Blank Base
+          {pkg.name}
         </Typography>
         {status ? (
           <Typography color="success.main">
