@@ -1,0 +1,27 @@
+{
+  "sections": [
+    {
+      "label": "",
+      "items": [
+        { "label": "Overview", "icon": "Dashboard", "path": "/overview" },
+        { "label": "Analytics", "icon": "BarChart", "path": "/analytics" },
+        { "label": "Account", "icon": "Person", "path": "/account" }
+      ]
+    },
+    {
+      "label": "GESTIÓN",
+      "items": [
+        {
+          "label": "Usuarios",
+          "icon": "People",
+          "path": "/users",
+          "children": [
+            { "label": "Lista", "path": "/users/list" },
+            { "label": "Crear", "path": "/users/create" }
+          ]
+        },
+        { "label": "Configuración", "icon": "Settings", "path": "/admin", "adminOnly": true }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "app": {
+    "title": "Mi App",
+    "logo": ""
+  },
+  "theme": {
+    "mode": "dark",
+    "primaryColor": "#4fc3f7",
+    "secondaryColor": "#81d4fa",
+    "borderRadius": 14
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "subtitle": "Welcome user, please sign in to continue",
+      "buttonText": "Sign In With Email And Password",
+      "fields": {
+        "emailLabel": "Email",
+        "passwordLabel": "Password"
+      }
+    },
+    "signUp": {
+      "title": "Sign up",
+      "subtitle": "Create a new account to get started",
+      "buttonText": "Create Account",
+      "passwordHelp": "Mínimo 8 caracteres, al menos 1 dígito",
+      "fields": {
+        "emailLabel": "Email",
+        "passwordLabel": "Password"
+      }
+    },
+    "links": {
+      "noAccount": "No tienes cuenta?",
+      "noAccountAction": "Crear cuenta",
+      "hasAccount": "Ya tienes cuenta?",
+      "hasAccountAction": "Iniciar sesión"
+    },
+    "button": {
+      "color": "#0277bd",
+      "hoverColor": "#01579b"
+    }
+  },
+  "authenticated": {
+    "title": "Bienvenido",
+    "subtitle": "Sesión activa como {{username}}",
+    "profileButton": "Obtener perfil",
+    "signOutButton": "Cerrar sesión"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "auth": {
+    "provider": "cognito",
+    "sessionDurationHours": 24,
+    "passwordPolicy": {
+      "minLength": 8,
+      "requireUppercase": false,
+      "requireLowercase": false,
+      "requireDigits": true,
+      "requireSpecialChars": false
+    },
+    "requireEmailVerification": false,
+    "cognito": {
+      "mfa": "required",
+      "mfaTypes": [
+        "TOTP",
+        "EMAIL"
+      ],
+      "selfSignUp": true,
+      "signInWith": "email",
+      "groups": [
+        "administrador",
+        "lectura"
+      ],
+      "userAttributes": []
+    }
+  }
+}
