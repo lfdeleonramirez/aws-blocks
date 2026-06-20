@@ -268,8 +268,9 @@ function App() {
     setLoading(true);
 
     try {
-      // Usar el session del estado guardado
-      const session = mfaSession?.session || '';
+      // Extraer el session token del campo hidden en actions
+      const sessionField = mfaSession?.actions?.[0]?.fields?.find((f: any) => f.name === 'session');
+      const session = sessionField?.defaultValue || mfaSession?.session || '';
       const result = await (authApi as any).setAuthState({ action: 'confirmSignIn', challenge: 'code', session, code: mfaCode });
       console.log('[AUTH DEBUG] MFA verify result:', JSON.stringify(result));
 
@@ -295,7 +296,8 @@ function App() {
     setLoading(true);
 
     try {
-      const session = mfaSession?.session || '';
+      const sessionField = mfaSession?.actions?.[0]?.fields?.find((f: any) => f.name === 'session');
+      const session = sessionField?.defaultValue || mfaSession?.session || '';
       const result = await (authApi as any).setAuthState({ action: 'confirmSignIn', challenge: 'totpSetup', session, sharedSecret: mfaSecret, code: mfaCode });
       console.log('[AUTH DEBUG] MFA setup result:', JSON.stringify(result));
 
@@ -327,7 +329,8 @@ function App() {
     setLoading(true);
 
     try {
-      const session = mfaSession?.session || '';
+      const sessionField = mfaSession?.actions?.[0]?.fields?.find((f: any) => f.name === 'session');
+      const session = sessionField?.defaultValue || mfaSession?.session || '';
       const result = await (authApi as any).setAuthState({ action: 'confirmSignIn', challenge: 'mfaType', session, mfaType });
       console.log('[AUTH DEBUG] MFA type select result:', JSON.stringify(result));
 
